@@ -1,0 +1,45 @@
+* {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+body {
+    background:url(Images/background.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+input, option, select {
+    width: 200px;
+}
+
+input, select {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0, .3);
+}
+
+#form {
+    background: white;
+    width: max-content;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 5%;
+}
+
+#submit {
+    border: none;
+    outline: none;
+    height: 30px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+#logo {
+    border-radius: 50%;
+    height: 100;
+    width: 100px;
+}
+
