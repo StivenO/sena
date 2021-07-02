@@ -1,3 +1,4 @@
+<?PHP include ("seguridad.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +18,16 @@
         <ul id="list">
             <li>
                 <h1>Agroveterinaria La Salle</h1>
+                <br />
+                <h2><?PHP echo $_SESSION["nomuser"];?></h2>
+                <h2><?PHP echo $_SESSION["apeuser"];?></h2>
+
             </li>
             <li><img src="Images/logo.jpg" alt="logotipo" id="logo_sidebar"></li>
-            <li><a href="modulo_clientes.html"><i class="fi-rr-user"></i> Clientes</a></li>
-            <li><a href="modulo_citas.html"><i class="fi-rr-stethoscope"></i> Citas</a></li>
-            <li><a href="modulo_empleados.html"><i class="fi-rr-briefcase"></i> Empleados</a></li>
-            <li><a href="login.html"><i class="fi-rr-sign-out"></i> Cerrar sesión</a></li>
+            <li><a href="modulo_clientes.php"><i class="fi-rr-user"></i> Clientes</a></li>
+            <li><a href="modulo_citas.php"><i class="fi-rr-stethoscope"></i> Citas</a></li>
+            <li><a href="modulo_empleados.php"><i class="fi-rr-briefcase"></i> Empleados</a></li>
+            <li><a href="login.php"><i class="fi-rr-sign-out"></i> Cerrar sesión</a></li>
         </ul>
 
 
@@ -35,29 +40,21 @@
     </div>
 
     <div id ="form">
-        <form>
-            <label for "id">Identificación empleado:</label><br>
-            <input type="number" id="id" min=10000000 max=1999999999><br>
+        <form action="empleado/guardar.php" method="post" class="user">
             <label for "name">Nombre/s:</label><br>
-            <input type="text" id="name"><br>
+            <input name="nombre_user" type="text" id="name"><br>
             <label for "last_name">Apellidos:</label><br>
-            <input type="text" id="last_name"><br>
+            <input name="apellido_user" type="text" id="last_name"><br>
             <label for "email">Email:</label><br>
-            <input type="email" id="email"><br>
+            <input name="correo_user" type="email" id="email"><br>
             <label for "phone">Teléfono:</label><br>
-            <input type="number" id="phone" min=3009999999 max=3519999999><br>
-            <label for "adress">Dirección:</label><br>
-            <input type="text" id="adress"><br>
-            <label for ="init_date">Fecha de ingreso:</label><br>
-            <input type="date" id="init_date"><br>
-            <label for ="init_date">Fecha de nacimiento:</label><br>
-            <input type="date" id="init_date"><br>
+            <input name="telefono_user" type="phone" id="phone" min=3009999999 max=3519999999><br>
             <label for "user">Usuario:</label><br>
-            <input type="text" id="user"><br>
+            <input name="nick" type="" id="user"><br>
             <label for "pass">Contraseña:</label><br>
-            <input type="text" id="pass"><br>
+            <input name="pass" type="password" id="pass"><br>
             <input type="submit" id="submit">
-            
+
         </form>
     </div>
 
