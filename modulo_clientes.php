@@ -1,4 +1,5 @@
-<?PHP include ("seguridad.php");?>
+
+  <?PHP include ("seguridad.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,6 +29,7 @@
             <li><a href="modulo_clientes.php"><i class="fi-rr-user"></i> Clientes</a></li>
             <li><a href="modulo_citas.php"><i class="fi-rr-stethoscope"></i> Citas</a></li>
             <li><a href="modulo_empleados.php"><i class="fi-rr-briefcase"></i> Empleados</a></li>
+            <li><a href="prueba.php"><i class="fi-rr-briefcase"></i> Prueba</a></li>
             <li><a href="salir.php"><i class="fi-rr-sign-out"></i> Cerrar sesión</a></li>
         </ul>
 

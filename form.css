@@ -18,7 +18,6 @@ input, select {
     border: none;
     border-bottom: 1px solid rgba(0,0,0, .3);
 }
-
 #form {
     background: white;
     width: max-content;
@@ -26,7 +25,9 @@ input, select {
     margin-right:auto;
     border-radius: 5%;
 }
-
+#table-responsive {
+  border-radius: 5%;
+}
 #submit {
     border: none;
     outline: none;
@@ -42,4 +43,3 @@ input, select {
     height: 100;
     width: 100px;
 }
-
